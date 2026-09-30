@@ -1,0 +1,25 @@
+EXTRACTION RULES (same JSON object, same delimiters)
+
+Extract into "extracted_information" ONLY values that literally appear in the
+email between <<<UNTRUSTED_EMAIL_BEGIN and UNTRUSTED_EMAIL_END>>>:
+- customer_name, company, phone_number, email_address, order_number,
+  invoice_number, product, amount, currency, dates, deadlines, meeting_date,
+  location, requested_action.
+- "dates": original date phrases exactly as written.
+- "deadlines": objects {"text": <original phrase>, "normalized_date": <YYYY-MM-DD or null>}.
+  Resolve a normalized_date ONLY when the phrase is unambiguous and the
+  reference datetime below makes it determinable; otherwise null.
+  Reference datetime: $reference_datetime
+  Timezone: $timezone
+- "amount" must keep the number as written; "currency" is the symbol or code
+  shown (e.g. "USD", "EUR", "$$").
+
+ACTION ITEMS
+Detect explicit tasks in "action_items":
+{"description": "...", "owner": "<only if explicitly named>", "deadline_text":
+"<original phrase or null>", "due_date": "<YYYY-MM-DD or null>", "status":
+"pending", "evidence": "<short supporting excerpt or null>"}
+- Owner and dates are null unless explicitly supported.
+- Add "source_email_id" only if the input email provides an id.
+
+Never fabricate a value. A missing field must stay null or [].

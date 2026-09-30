@@ -1,0 +1,16 @@
+line-length = 120
+target-version = "py312"
+extend-exclude = [".pytest_cache", "tests/fixtures"]
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = [
+    "B008",
+    "E741",
+]
+
+[lint.per-file-ignores]
+# test files prepend sys.path setup before importing the package under test
+"tests/*" = ["E402"]
+# dataset generation and evaluation build long human-readable sentences
+"scripts/*" = ["E501"]
