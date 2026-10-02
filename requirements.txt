@@ -1,0 +1,19 @@
+# Runtime -------------------------------------------------------------------
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+email-validator==2.3.0
+python-multipart==0.0.32
+SQLAlchemy==2.1.1
+alembic==1.20.0
+psycopg[binary]==3.3.6
+argon2-cffi==25.1.0
+PyJWT==2.15.1
+python-dotenv==1.2.3
+httpx==0.28.1
+
+# Development / testing -----------------------------------------------------
+pytest==9.1.1
+pytest-asyncio==1.4.0
+ruff==0.16.9

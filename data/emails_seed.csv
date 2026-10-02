@@ -1,0 +1,344 @@
+expected_category,subject,from_name,from_address,to,body_text,received_at,direction
+sales_inquiry,Pricing question: the enterprise plan,Priya Raman,priya.raman@northwind.test,inbox@demo.example,"Hi team,
+
+We are evaluating the enterprise plan for our sales team of about 12 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-10.
+
+Thanks,
+Priya",2026-01-05T08:00:00+00:00,inbound
+sales_inquiry,Pricing question: 500 seat licences,Daniel Okafor,daniel.okafor@acme.test,inbox@demo.example,"Hi team,
+
+We are evaluating 500 seat licences for our sales team of about 240 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-02-10.
+
+Thanks,
+Daniel",2026-01-05T19:07:00+00:00,inbound
+sales_inquiry,Pricing question: the API add-on,Sofia Marchetti,sofia.marchetti@acme.test,inbox@demo.example,"Hi team,
+
+We are evaluating the API add-on for our sales team of about 12 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-18.
+
+Thanks,
+Sofia",2026-01-06T06:14:00+00:00,inbound
+sales_inquiry,Pricing question: a reseller agreement,Kenji Watanabe,kenji.watanabe@globex.test,inbox@demo.example,"Hi team,
+
+We are evaluating a reseller agreement for our sales team of about 85 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-18.
+
+Thanks,
+Kenji",2026-01-06T17:21:00+00:00,inbound
+sales_inquiry,Pricing question: the on-premise edition,Laura Novak,laura.novak@northwind.test,inbox@demo.example,"Hi team,
+
+We are evaluating the on-premise edition for our support team of about 85 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-25.
+
+Thanks,
+Laura",2026-01-07T04:28:00+00:00,inbound
+sales_inquiry,Pricing question: annual support,Marcus Feld,marcus.feld@globex.test,inbox@demo.example,"Hi team,
+
+We are evaluating annual support for our ops team of about 40 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-02-10.
+
+Thanks,
+Marcus",2026-01-07T15:35:00+00:00,inbound
+sales_inquiry,Pricing question: the analytics module,Aisha Bello,aisha.bello@initech.test,inbox@demo.example,"Hi team,
+
+We are evaluating the analytics module for our ops team of about 85 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-25.
+
+Thanks,
+Aisha",2026-01-08T02:42:00+00:00,inbound
+sales_inquiry,Pricing question: bulk SMS credits,Tom Whitfield,tom.whitfield@northwind.test,inbox@demo.example,"Hi team,
+
+We are evaluating bulk SMS credits for our ops team of about 85 people. Could you send a quote and confirm whether volume discounts start at 50 seats? We would like to decide before 2026-03-25.
+
+Thanks,
+Tom",2026-01-08T13:49:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4400,Kenji Watanabe,kenji.watanabe@northwind.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4400 arrived three weeks late. I paid 59.0 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Kenji",2026-01-09T00:56:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4401,Laura Novak,laura.novak@umbrella.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4401 was missing two items. I paid 59.0 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Laura",2026-01-09T12:03:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4402,Marcus Feld,marcus.feld@acme.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4402 was damaged in transit. I paid 89.99 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Marcus",2026-01-09T23:10:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4403,Aisha Bello,aisha.bello@umbrella.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4403 charged twice for the same order. I paid 89.99 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Aisha",2026-01-10T10:17:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4404,Tom Whitfield,tom.whitfield@umbrella.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4404 did not match the description. I paid 1240.0 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Tom",2026-01-10T21:24:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4405,Elena Petrova,elena.petrova@northwind.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4405 the driver refused to hand it over. I paid 249.5 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Elena",2026-01-11T08:31:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4406,Hugo Lindqvist,hugo.lindqvist@globex.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4406 was sent to the wrong address. I paid 1240.0 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Hugo",2026-01-11T19:38:00+00:00,inbound
+customer_complaint,Complaint: order ORD-4407,Nadia Haddad,nadia.haddad@globex.test,inbox@demo.example,"Hello,
+
+I am very disappointed. My order ORD-4407 stopped working after two days. I paid 89.99 and I expect this resolved today. Please confirm you have received this complaint.
+
+Unhappy customer,
+Nadia",2026-01-12T06:45:00+00:00,inbound
+support_request,Help needed: reset my two-factor authentication,Aisha Bello,aisha.bello@globex.test,inbox@demo.example,"Hi support,
+
+I need help to reset my two-factor authentication. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9000. Could you reply with the exact steps?
+
+Regards,
+Aisha",2026-01-12T17:52:00+00:00,inbound
+support_request,Help needed: export my data as CSV,Tom Whitfield,tom.whitfield@initech.test,inbox@demo.example,"Hi support,
+
+I need help to export my data as CSV. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9001. Could you reply with the exact steps?
+
+Regards,
+Tom",2026-01-13T04:59:00+00:00,inbound
+support_request,Help needed: invite a colleague,Elena Petrova,elena.petrova@northwind.test,inbox@demo.example,"Hi support,
+
+I need help to invite a colleague. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9002. Could you reply with the exact steps?
+
+Regards,
+Elena",2026-01-13T16:06:00+00:00,inbound
+support_request,Help needed: change the billing contact,Hugo Lindqvist,hugo.lindqvist@globex.test,inbox@demo.example,"Hi support,
+
+I need help to change the billing contact. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9003. Could you reply with the exact steps?
+
+Regards,
+Hugo",2026-01-14T03:13:00+00:00,inbound
+support_request,Help needed: understand the API rate limits,Nadia Haddad,nadia.haddad@initech.test,inbox@demo.example,"Hi support,
+
+I need help to understand the API rate limits. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9004. Could you reply with the exact steps?
+
+Regards,
+Nadia",2026-01-14T14:20:00+00:00,inbound
+support_request,Help needed: restore a deleted project,Owen Griffiths,owen.griffiths@umbrella.test,inbox@demo.example,"Hi support,
+
+I need help to restore a deleted project. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9005. Could you reply with the exact steps?
+
+Regards,
+Owen",2026-01-15T01:27:00+00:00,inbound
+support_request,Help needed: configure SSO with Okta,Priya Raman,priya.raman@globex.test,inbox@demo.example,"Hi support,
+
+I need help to configure SSO with Okta. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9006. Could you reply with the exact steps?
+
+Regards,
+Priya",2026-01-15T12:34:00+00:00,inbound
+support_request,Help needed: troubleshoot a webhook that never fires,Daniel Okafor,daniel.okafor@acme.test,inbox@demo.example,"Hi support,
+
+I need help to troubleshoot a webhook that never fires. I have already tried the documented steps in the admin console under Settings > Security. Account id is ACC-9007. Could you reply with the exact steps?
+
+Regards,
+Daniel",2026-01-15T23:41:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Daniel Okafor,daniel.okafor@northwind.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Tuesday 10:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Daniel",2026-01-16T10:48:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Sofia Marchetti,sofia.marchetti@acme.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Wednesday 14:30 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Sofia",2026-01-16T21:55:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Kenji Watanabe,kenji.watanabe@umbrella.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Thursday 09:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Kenji",2026-01-17T09:02:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Laura Novak,laura.novak@acme.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Friday 16:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Laura",2026-01-17T20:09:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Marcus Feld,marcus.feld@northwind.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Monday 11:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Marcus",2026-01-18T07:16:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Aisha Bello,aisha.bello@umbrella.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Wednesday 08:30 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Aisha",2026-01-18T18:23:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Tom Whitfield,tom.whitfield@northwind.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Thursday 15:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Tom",2026-01-19T05:30:00+00:00,inbound
+meeting_request,Meeting request: quarterly review,Elena Petrova,elena.petrova@initech.test,inbox@demo.example,"Hello,
+
+Could we book 30 minutes on Tuesday 13:00 to walk through the quarterly review? I will send an invite once you confirm. Dial-in details are in the calendar entry.
+
+Best,
+Elena",2026-01-19T16:37:00+00:00,inbound
+invoice_payment,Invoice INV-7100 due,Elena Petrova,elena.petrova@northwind.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7100 for 780.25 EUR is due on 2026-02-12. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Elena",2026-01-20T03:44:00+00:00,inbound
+invoice_payment,Invoice INV-7101 due,Hugo Lindqvist,hugo.lindqvist@umbrella.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7101 for 3200.50 EUR is due on 2026-03-12. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Hugo",2026-01-20T14:51:00+00:00,inbound
+invoice_payment,Invoice INV-7102 due,Nadia Haddad,nadia.haddad@northwind.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7102 for 780.25 EUR is due on 2026-02-12. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Nadia",2026-01-21T01:58:00+00:00,inbound
+invoice_payment,Invoice INV-7103 due,Owen Griffiths,owen.griffiths@initech.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7103 for 425.75 EUR is due on 2026-03-20. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Owen",2026-01-21T13:05:00+00:00,inbound
+invoice_payment,Invoice INV-7104 due,Priya Raman,priya.raman@globex.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7104 for 1450.00 EUR is due on 2026-03-05. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Priya",2026-01-22T00:12:00+00:00,inbound
+invoice_payment,Invoice INV-7105 due,Daniel Okafor,daniel.okafor@umbrella.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7105 for 780.25 EUR is due on 2026-02-12. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Daniel",2026-01-22T11:19:00+00:00,inbound
+invoice_payment,Invoice INV-7106 due,Sofia Marchetti,sofia.marchetti@umbrella.test,inbox@demo.example,"Dear accounts team,
+
+Invoice INV-7106 for 9600.00 EUR is due on 2026-02-05. Please process the payment by the due date and send remittance advice to this address.
+
+Kind regards,
+Sofia",2026-01-22T22:26:00+00:00,inbound
+job_application,Application: Senior Backend Engineer,Sofia Marchetti,sofia.marchetti@acme.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the Senior Backend Engineer position. I have 3 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Sofia",2026-01-23T09:33:00+00:00,inbound
+job_application,Application: Product Designer,Kenji Watanabe,kenji.watanabe@northwind.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the Product Designer position. I have 8 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Kenji",2026-01-23T20:40:00+00:00,inbound
+job_application,Application: Data Analyst,Laura Novak,laura.novak@globex.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the Data Analyst position. I have 11 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Laura",2026-01-24T07:47:00+00:00,inbound
+job_application,Application: Customer Success Manager,Marcus Feld,marcus.feld@globex.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the Customer Success Manager position. I have 8 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Marcus",2026-01-24T18:54:00+00:00,inbound
+job_application,Application: QA Engineer,Aisha Bello,aisha.bello@initech.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the QA Engineer position. I have 5 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Aisha",2026-01-25T06:01:00+00:00,inbound
+job_application,Application: Technical Writer,Tom Whitfield,tom.whitfield@initech.test,inbox@demo.example,"Dear hiring manager,
+
+I am applying for the Technical Writer position. I have 3 years of experience and have attached my CV. I am available for an interview from next week.
+
+Sincerely,
+Tom",2026-01-25T17:08:00+00:00,inbound
+general_information,Update: office closed for the public holiday,Priya Raman,priya.raman@umbrella.test,inbox@demo.example,"Hi all,
+
+Just a note that we office closed for the public holiday. No action is required from your side. Details are on the intranet.
+
+Priya",2026-01-26T04:15:00+00:00,inbound
+general_information,Update: new version of the mobile app,Daniel Okafor,daniel.okafor@umbrella.test,inbox@demo.example,"Hi all,
+
+Just a note that we new version of the mobile app. No action is required from your side. Details are on the intranet.
+
+Daniel",2026-01-26T15:22:00+00:00,inbound
+general_information,Update: updated terms of service,Sofia Marchetti,sofia.marchetti@umbrella.test,inbox@demo.example,"Hi all,
+
+Just a note that we updated terms of service. No action is required from your side. Details are on the intranet.
+
+Sofia",2026-01-27T02:29:00+00:00,inbound
+general_information,Update: annual customer survey,Kenji Watanabe,kenji.watanabe@umbrella.test,inbox@demo.example,"Hi all,
+
+Just a note that we annual customer survey. No action is required from your side. Details are on the intranet.
+
+Kenji",2026-01-27T13:36:00+00:00,inbound
+general_information,Update: office move to the third floor,Laura Novak,laura.novak@initech.test,inbox@demo.example,"Hi all,
+
+Just a note that we office move to the third floor. No action is required from your side. Details are on the intranet.
+
+Laura",2026-01-28T00:43:00+00:00,inbound
+general_information,Update: maintenance window this weekend,Marcus Feld,marcus.feld@umbrella.test,inbox@demo.example,"Hi all,
+
+Just a note that we maintenance window this weekend. No action is required from your side. Details are on the intranet.
+
+Marcus",2026-01-28T11:50:00+00:00,inbound
+general_information,Update: newsletter for January,Aisha Bello,aisha.bello@northwind.test,inbox@demo.example,"Hi all,
+
+Just a note that we newsletter for January. No action is required from your side. Details are on the intranet.
+
+Aisha",2026-01-28T22:57:00+00:00,inbound
+spam,FW: double your revenue in 30 days,Promotions Dept,promotions.dept@umbrella.test,inbox@demo.example,"LIMITED TIME OFFER - double your revenue in 30 days! Click here now, this is not a scam. Reply STOP to unsubscribe from this list.",2026-01-29T10:04:00+00:00,inbound
+spam,FW: exclusive crypto opportunity,Promotions Dept,promotions.dept@umbrella.test,inbox@demo.example,"LIMITED TIME OFFER - exclusive crypto opportunity! Click here now, this is not a scam. Reply STOP to unsubscribe from this list.",2026-01-29T21:11:00+00:00,inbound
+spam,FW: verified B2B contact lists,Promotions Dept,promotions.dept@acme.test,inbox@demo.example,"LIMITED TIME OFFER - verified B2B contact lists! Click here now, this is not a scam. Reply STOP to unsubscribe from this list.",2026-01-30T08:18:00+00:00,inbound
+spam,FW: guaranteed first page ranking,Promotions Dept,promotions.dept@northwind.test,inbox@demo.example,"LIMITED TIME OFFER - guaranteed first page ranking! Click here now, this is not a scam. Reply STOP to unsubscribe from this list.",2026-01-30T19:25:00+00:00,inbound
+spam,FW: free business webinar,Promotions Dept,promotions.dept@initech.test,inbox@demo.example,"LIMITED TIME OFFER - free business webinar! Click here now, this is not a scam. Reply STOP to unsubscribe from this list.",2026-01-31T06:32:00+00:00,inbound
+urgent,URGENT: production outage since 09:00,Laura Novak,laura.novak@northwind.test,inbox@demo.example,"Urgent - please respond ASAP.
+
+We have a critical situation: see subject. I need a decision before 2026-03-10 and a confirmation that you received this. Reference ORD-9300.
+
+Standing by,
+Priya",2026-01-31T17:39:00+00:00,inbound
+urgent,URGENT: contract expires tomorrow,Marcus Feld,marcus.feld@globex.test,inbox@demo.example,"Urgent - please respond ASAP.
+
+We have a critical situation: see subject. I need a decision before 2026-03-11 and a confirmation that you received this. Reference ORD-9301.
+
+Standing by,
+Daniel",2026-02-01T04:46:00+00:00,inbound
+urgent,"URGENT: payment declined, shipment on hold",Aisha Bello,aisha.bello@northwind.test,inbox@demo.example,"Urgent - please respond ASAP.
+
+We have a critical situation: see subject. I need a decision before 2026-03-12 and a confirmation that you received this. Reference ORD-9302.
+
+Standing by,
+Sofia",2026-02-01T15:53:00+00:00,inbound
+other,Note: lost badge,Marcus Feld,marcus.feld@acme.test,inbox@demo.example,"Hi,
+
+Quick one - lost badge. Let me know when you have a moment.
+
+Marcus",2026-02-02T03:00:00+00:00,inbound
+other,Note: feedback on the workshop,Aisha Bello,aisha.bello@initech.test,inbox@demo.example,"Hi,
+
+Quick one - feedback on the workshop. Let me know when you have a moment.
+
+Aisha",2026-02-02T14:07:00+00:00,inbound
+other,Note: question about the API changelog,Tom Whitfield,tom.whitfield@initech.test,inbox@demo.example,"Hi,
+
+Quick one - question about the API changelog. Let me know when you have a moment.
+
+Tom",2026-02-03T01:14:00+00:00,inbound
