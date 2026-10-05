@@ -1,0 +1,2499 @@
+{
+  "dataset_version": "1.0",
+  "description": "Synthetic business emails with expected AI outcomes. All identities are fake.",
+  "reference_timezone": "UTC",
+  "group_counts": {
+    "customer_complaint": 10,
+    "sales_inquiry": 10,
+    "support_request": 10,
+    "meeting_request": 10,
+    "invoice_payment": 10,
+    "job_application": 10,
+    "general_information": 10,
+    "urgent": 10,
+    "spam": 10
+  },
+  "emails": [
+    {
+      "id": "synthetic_001",
+      "group": "customer_complaint",
+      "subject": "Refund request - item arrived damaged",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, my order ORD-73000 arrived damaged and the packaging was crushed. This is unacceptable and I want a refund of 29.99 EUR. Please confirm the refund within 3 days. Anna Reyes",
+      "received_at": "2025-09-01T08:00:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "angry",
+        "order_number": "ORD-73000",
+        "amount": "29.99",
+        "currency": "EUR",
+        "deadline_text": "within 3 days",
+        "due_date": "2025-09-04",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_002",
+      "group": "customer_complaint",
+      "subject": "Terrible service at your Leeds branch",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "I am writing a formal complaint about the rude treatment I received at your Leeds branch. Your staff ignored my complaint for twenty minutes and this is unacceptable.",
+      "received_at": "2025-09-04T13:07:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "angry",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_003",
+      "group": "customer_complaint",
+      "subject": "Wrong item delivered again",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, you sent the wrong item with order ORD-73014. I am disappointed because this is the second time. Please send the correct product and arrange a collection.",
+      "received_at": "2025-09-07T09:14:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "negative",
+        "order_number": "ORD-73014",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_004",
+      "group": "customer_complaint",
+      "subject": "Charged twice for my subscription",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi team, my card was charged twice for the annual subscription of 80.99 EUR. I am dissatisfied and consider this a formal complaint. Please reverse the duplicate payment and confirm by Friday.",
+      "received_at": "2025-09-10T14:21:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "negative",
+        "amount": "80.99",
+        "currency": "EUR",
+        "deadline_text": "by Friday",
+        "due_date": "2025-09-12",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_005",
+      "group": "customer_complaint",
+      "subject": "Order arrived broken - third time",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, my order ORD-73028 arrived broken again. Three deliveries in a row arrived broken. I am unhappy and expect a replacement immediately.",
+      "received_at": "2025-09-13T10:28:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "critical",
+        "sentiment": "negative",
+        "order_number": "ORD-73028",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_006",
+      "group": "customer_complaint",
+      "subject": "Still waiting for my refund",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "I submitted my refund request two weeks ago and I am still waiting for a reply. Nobody answers my calls and this poor service must be escalated.",
+      "received_at": "2025-09-16T15:35:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "high",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_007",
+      "group": "customer_complaint",
+      "subject": "Formal complaint about repeated delays",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Dear team, this is a formal complaint about the repeated delays with order ORD-73042. I remain dissatisfied with the outcome so far and expect a written explanation.",
+      "received_at": "2025-09-19T11:42:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "negative",
+        "order_number": "ORD-73042",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_008",
+      "group": "customer_complaint",
+      "subject": "Rude behaviour from your representative",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Yesterday your representative was rude and dismissive on the phone. I am angry about the way my request was handled and I want a manager to call me back.",
+      "received_at": "2025-09-02T16:49:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "angry",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_009",
+      "group": "customer_complaint",
+      "subject": "Quality of the delivered goods is unacceptable",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "The batch we received under order ORD-73056 has poor stitching and two pieces were damaged. The quality is below the standard for our retail shelves.",
+      "received_at": "2025-09-05T12:56:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "angry",
+        "order_number": "ORD-73056",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_010",
+      "group": "customer_complaint",
+      "subject": "Unhappy with the renewal price increase",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, I am unhappy about the surprise renewal price and I consider this a formal complaint. The new price of 182.99 EUR was never confirmed with me and I want the previous price restored.",
+      "received_at": "2025-09-08T08:03:00+00:00",
+      "expected": {
+        "category": "customer_complaint",
+        "priority": "medium",
+        "sentiment": "negative",
+        "amount": "182.99",
+        "currency": "EUR",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_011",
+      "group": "sales_inquiry",
+      "subject": "Request for quotation - 50 units",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, we would like a quotation for 50 units of the standard model. Please share the price list and lead time. My name is Anna Reyes from Blue Harbor Logistics.",
+      "received_at": "2025-09-11T13:10:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "customer_name": "Anna Reyes",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_012",
+      "group": "sales_inquiry",
+      "subject": "Pricing for the enterprise plan",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, could you send pricing for the enterprise plan? We expect around 200 seats and would like to compare tiers before our budget review.",
+      "received_at": "2025-09-14T09:17:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_013",
+      "group": "sales_inquiry",
+      "subject": "Interested in a bulk purchase",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Good morning, I am interested in a bulk purchase of your cleaning supplies. How much does a pallet of 200 boxes cost?",
+      "received_at": "2025-09-17T14:24:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_014",
+      "group": "sales_inquiry",
+      "subject": "Question about the product catalogue",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, the catalogue lists two variants of the pump. Could you clarify which one suits salt water? We are ready to buy once we confirm the specification.",
+      "received_at": "2025-09-20T10:31:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_015",
+      "group": "sales_inquiry",
+      "subject": "Partnership proposal for the northern region",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Dear sales team, Verde Hospitality would like to propose a distribution partnership for the northern region. Please share your proposal template and partner pricing.",
+      "received_at": "2025-09-03T15:38:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_016",
+      "group": "sales_inquiry",
+      "subject": "Discount for an annual subscription",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, we plan to renew for a full year. Is a discount available if we commit annually? A quick confirmation would help us finalise the budget.",
+      "received_at": "2025-09-06T11:45:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_017",
+      "group": "sales_inquiry",
+      "subject": "How much does the premium tier cost?",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Could you tell me how much the premium tier costs per month, and whether setup is included? Thank you for your help.",
+      "received_at": "2025-09-09T16:52:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "positive",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_018",
+      "group": "sales_inquiry",
+      "subject": "Vendor enquiry for office supplies",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, we are comparing vendors for office supplies and would like your catalogue and pricing. Please send a formal quotation for the items below.",
+      "received_at": "2025-09-12T12:59:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_019",
+      "group": "sales_inquiry",
+      "subject": "Price list for the new range",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi there, please share the price list for the new range. We plan to purchase before the quarter closes. Much appreciated.",
+      "received_at": "2025-09-15T08:06:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "positive",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_020",
+      "group": "sales_inquiry",
+      "subject": "Quote needed for a trade show booth",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "We need a quote for a modular trade show booth. Kindly include setup and teardown in the price.",
+      "received_at": "2025-09-18T13:13:00+00:00",
+      "expected": {
+        "category": "sales_inquiry",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_021",
+      "group": "support_request",
+      "subject": "Unable to log in to my account",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi support, I cannot log in to my account after the password reset. I need access by end of day today to finish a report. My email is contact20@blueharbor-logistics.example.",
+      "received_at": "2025-09-01T09:20:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "email_address": "{email}",
+        "deadline_text": "by end of day today",
+        "due_date": "2025-09-01",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_022",
+      "group": "support_request",
+      "subject": "Bug in the CSV export feature",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, the CSV export button produces an empty file for large date ranges. This bug blocks our monthly reporting and we are disappointed by the regression.",
+      "received_at": "2025-09-04T14:27:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_023",
+      "group": "support_request",
+      "subject": "API returns 500 error on upload",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Our integration now returns a 500 error on every upload request. Could you check the API status and advise?",
+      "received_at": "2025-09-07T10:34:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_024",
+      "group": "support_request",
+      "subject": "Dashboard keeps crashing",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, the dashboard keeps crashing when I open the analytics tab. I already cleared the cache but the crash still happens and I am unhappy about it.",
+      "received_at": "2025-09-10T15:41:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_025",
+      "group": "support_request",
+      "subject": "Password reset link is not working",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "The password reset link is not working; it says the token has expired. Please send a fresh link so I can get back in.",
+      "received_at": "2025-09-13T11:48:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_026",
+      "group": "support_request",
+      "subject": "How do I add a new user?",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, how do I add a new user to our workspace? I found the settings page but cannot see the invite option.",
+      "received_at": "2025-09-16T16:55:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_027",
+      "group": "support_request",
+      "subject": "Timeout when uploading attachments",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Uploading attachments over 20 MB always times out for our team, so our uploads are lost. Is there a larger limit available on the business plan?",
+      "received_at": "2025-09-19T12:02:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_028",
+      "group": "support_request",
+      "subject": "Broken link in the monthly report",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, the link to last month's report in your newsletter returns a 404 error. Could you republish the document? Thank you.",
+      "received_at": "2025-09-02T08:09:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_029",
+      "group": "support_request",
+      "subject": "Data sync fails between our systems",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Since Tuesday the data sync fails with a timeout message every hour and our synced records are lost. Please have engineering look into it urgently.",
+      "received_at": "2025-09-05T13:16:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "high",
+        "sentiment": "negative",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_030",
+      "group": "support_request",
+      "subject": "Troubleshooting steps for the printer",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Could you share troubleshooting steps for the label printer? It prints blank labels after the last firmware update.",
+      "received_at": "2025-09-08T09:23:00+00:00",
+      "expected": {
+        "category": "support_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_031",
+      "group": "meeting_request",
+      "subject": "Schedule a call this week",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, could we schedule a call this week to review the rollout plan? My availability is Tuesday to Thursday in the afternoon.",
+      "received_at": "2025-09-11T14:30:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_032",
+      "group": "meeting_request",
+      "subject": "Meeting request - quarterly review",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, I would like to arrange the quarterly review meeting. Please propose two slots that work for your team.",
+      "received_at": "2025-09-14T10:37:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_033",
+      "group": "meeting_request",
+      "subject": "Availability for a product demo",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, are you available for a product demo? Please confirm a time by 25 September 2025.",
+      "received_at": "2025-09-17T15:44:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "meeting_date": "25 September 2025",
+        "deadline_text": "25 September 2025",
+        "due_date": "2025-09-25",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_034",
+      "group": "meeting_request",
+      "subject": "Can we sync up on Tuesday?",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Would Tuesday work for a quick sync up about the migration? Thirty minutes should be enough.",
+      "received_at": "2025-09-20T11:51:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_035",
+      "group": "meeting_request",
+      "subject": "Invite to the project kickoff meeting",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, I invite you to the project kickoff meeting next week. Please reply with your preferred day.",
+      "received_at": "2025-09-03T16:58:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_036",
+      "group": "meeting_request",
+      "subject": "Reschedule our appointment",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "I need to reschedule our appointment because of a conflict. Could we meet the following week instead?",
+      "received_at": "2025-09-06T12:05:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_037",
+      "group": "meeting_request",
+      "subject": "Video call to discuss the contract",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Let's set up a video call to discuss the contract terms. I can join any afternoon this week.",
+      "received_at": "2025-09-09T08:12:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_038",
+      "group": "meeting_request",
+      "subject": "Calendar invite for the workshop",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Please send a calendar invite for the workshop by 2025-10-03. Four people from our team will attend.",
+      "received_at": "2025-09-12T13:19:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "meeting_date": "2025-10-03",
+        "deadline_text": "2025-10-03",
+        "due_date": "2025-10-03",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_039",
+      "group": "meeting_request",
+      "subject": "Please find a slot for the monthly check-in",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, please find a slot for our monthly check-in. We would like to keep it to forty-five minutes.",
+      "received_at": "2025-09-15T09:26:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_040",
+      "group": "meeting_request",
+      "subject": "Brief call to introduce the new team",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Could we schedule a call to introduce the new team? Thanks for your time.",
+      "received_at": "2025-09-18T14:33:00+00:00",
+      "expected": {
+        "category": "meeting_request",
+        "priority": "medium",
+        "sentiment": "positive",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_041",
+      "group": "invoice_payment",
+      "subject": "Invoice INV-4471 is overdue",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Dear customer, invoice INV-4471 for 309.99 USD is overdue. Please arrange payment within 3 days to avoid service interruption.",
+      "received_at": "2025-09-01T10:40:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "high",
+        "sentiment": "neutral",
+        "invoice_number": "INV-4471",
+        "amount": "309.99",
+        "currency": "USD",
+        "deadline_text": "within 3 days",
+        "due_date": "2025-09-04",
+        "reply_required": true,
+        "action_required": true,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_042",
+      "group": "invoice_payment",
+      "subject": "Payment received - receipt requested",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, we sent the payment of 326.99 USD on 10 September 2025. Could you please send the official receipt for our records? Thank you.",
+      "received_at": "2025-09-04T15:47:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "positive",
+        "amount": "326.99",
+        "currency": "USD",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_043",
+      "group": "invoice_payment",
+      "subject": "Reminder: outstanding balance on account 88213",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "This is a friendly reminder that the outstanding balance of 343.99 EUR remains unpaid. Kindly settle it by Friday.",
+      "received_at": "2025-09-07T11:54:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "amount": "343.99",
+        "currency": "EUR",
+        "deadline_text": "by Friday",
+        "due_date": "2025-09-12",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_044",
+      "group": "invoice_payment",
+      "subject": "Bank transfer details for the July invoice",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, attached are the bank transfer details for invoice INV-3390. Please confirm once the payment reaches your account.",
+      "received_at": "2025-09-10T16:01:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "invoice_number": "INV-3390",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_045",
+      "group": "invoice_payment",
+      "subject": "Purchase order for billing - PO-5521",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Our purchase order PO-5521 is approved. Please raise the invoice for 377.99 USD so our accounts team can process it.",
+      "received_at": "2025-09-13T12:08:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "order_number": "PO-5521",
+        "amount": "377.99",
+        "currency": "USD",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_046",
+      "group": "invoice_payment",
+      "subject": "Please confirm the payment due date",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Could you confirm the payment due date for order ORD-73315? Our finance team needs the exact date before releasing the transfer.",
+      "received_at": "2025-09-16T08:15:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "order_number": "ORD-73315",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_047",
+      "group": "invoice_payment",
+      "subject": "Final notice: payment overdue on INV-4402",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Final notice: payment for invoice INV-4402 is overdue by ten days. Please settle the amount of 411.99 USD today.",
+      "received_at": "2025-09-19T13:22:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "high",
+        "sentiment": "neutral",
+        "invoice_number": "INV-4402",
+        "amount": "411.99",
+        "currency": "USD",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_048",
+      "group": "invoice_payment",
+      "subject": "Request a copy of my receipt",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, could you send a copy of the receipt for order ORD-73329? The original email never arrived. Thank you.",
+      "received_at": "2025-09-02T09:29:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "positive",
+        "order_number": "ORD-73329",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_049",
+      "group": "invoice_payment",
+      "subject": "Remittance advice for September invoices",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Please find the remittance advice covering invoices INV-4410 and INV-4411. Both payments were released by our bank today.",
+      "received_at": "2025-09-05T14:36:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "invoice_number": "INV-4410",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_050",
+      "group": "invoice_payment",
+      "subject": "Billing query about the annual subscription",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, our annual subscription was invoiced at 62.99 USD instead of the quoted rate. Please review the billing and advise.",
+      "received_at": "2025-09-08T10:43:00+00:00",
+      "expected": {
+        "category": "invoice_payment",
+        "priority": "medium",
+        "sentiment": "neutral",
+        "amount": "62.99",
+        "currency": "USD",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_051",
+      "group": "job_application",
+      "subject": "Application for the Marketing Manager role",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Dear hiring team, I am applying for the Marketing Manager position. My resume and cover letter are attached for your review.",
+      "received_at": "2025-09-11T15:50:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_052",
+      "group": "job_application",
+      "subject": "My resume for the developer role",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, please find my resume attached for the developer role. I have six years of experience with Python services.",
+      "received_at": "2025-09-14T11:57:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_053",
+      "group": "job_application",
+      "subject": "Cover letter for the design position",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, I have attached my cover letter for the design position. I would be glad to walk through my portfolio on a call.",
+      "received_at": "2025-09-17T16:04:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_054",
+      "group": "job_application",
+      "subject": "Following up on my interview",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Thank you for the interview on Monday. I enjoyed the conversation and I am happy to provide any further information.",
+      "received_at": "2025-09-20T12:11:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "positive",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_055",
+      "group": "job_application",
+      "subject": "Candidate for the sales position",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Dear recruiter, I am a candidate for the sales position and submitted my application last week. Please confirm that it was received.",
+      "received_at": "2025-09-03T08:18:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_056",
+      "group": "job_application",
+      "subject": "Applying for the internship programme",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello, I am applying for the internship programme starting in January. My CV is attached along with two reference contacts.",
+      "received_at": "2025-09-06T13:25:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_057",
+      "group": "job_application",
+      "subject": "CV for your review - analyst role",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Please review my CV for the analyst role. I can start at two weeks' notice if selected.",
+      "received_at": "2025-09-09T09:32:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_058",
+      "group": "job_application",
+      "subject": "Job opening enquiry - support engineer",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hi, I saw the job opening for a support engineer on your careers page. Is the vacancy still open for applications?",
+      "received_at": "2025-09-12T14:39:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_059",
+      "group": "job_application",
+      "subject": "Interview availability next week",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "As a candidate, I am available for the interview. Please confirm by 25 September 2025 between 10:00 and 12:00.",
+      "received_at": "2025-09-15T10:46:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "meeting_date": "25 September 2025",
+        "deadline_text": "25 September 2025",
+        "due_date": "2025-09-25",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_060",
+      "group": "job_application",
+      "subject": "Hiring process enquiry for the analyst role",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Could you share the steps of the hiring process for the analyst role? I would like to know the expected timeline.",
+      "received_at": "2025-09-18T15:53:00+00:00",
+      "expected": {
+        "category": "job_application",
+        "priority": "low",
+        "sentiment": "neutral",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_061",
+      "group": "general_information",
+      "subject": "October newsletter - product updates",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "For your information, the October newsletter is out with product updates and tips. This is an automated message, no reply needed.",
+      "received_at": "2025-09-01T11:00:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_062",
+      "group": "general_information",
+      "subject": "Company all-hands announcement",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Hello everyone, this is an announcement about the company all-hands on 2025-10-03. Do not reply to this mailbox.",
+      "received_at": "2025-09-04T16:07:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_063",
+      "group": "general_information",
+      "subject": "FYI: office closed on Monday",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "For your information the office will be closed on Monday for the public holiday. No reply is required.",
+      "received_at": "2025-09-07T12:14:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_064",
+      "group": "general_information",
+      "subject": "Policy update for all staff",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Please be informed that the travel policy has been updated. The new version is available on the intranet.",
+      "received_at": "2025-09-10T08:21:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": true,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_065",
+      "group": "general_information",
+      "subject": "Holiday schedule bulletin",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Bulletin: the holiday schedule for the next quarter has been published. This mailbox is not monitored, no reply needed.",
+      "received_at": "2025-09-13T13:28:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_066",
+      "group": "general_information",
+      "subject": "New employee handbook available",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Kindly note that the new employee handbook is now available. It replaces all previous versions.",
+      "received_at": "2025-09-16T09:35:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": true,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_067",
+      "group": "general_information",
+      "subject": "Reminder: quarterly town hall",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "For your information, the quarterly town hall takes place at the end of this month. Please register by the end of this month if you plan to attend.",
+      "received_at": "2025-09-19T14:42:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": true,
+        "action_required": true,
+        "deadline_text": "end of this month",
+        "due_date": "2025-09-30",
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_068",
+      "group": "general_information",
+      "subject": "Newsletter: five tips for better reports",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Our newsletter this week shares five tips for better reports. No reply needed.",
+      "received_at": "2025-09-02T10:49:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_069",
+      "group": "general_information",
+      "subject": "Phone system upgrade notice",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Please be informed that the phone system will be upgraded this weekend. Calls may fail during the maintenance window.",
+      "received_at": "2025-09-05T15:56:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": true,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_070",
+      "group": "general_information",
+      "subject": "Bulletin: parking lot maintenance",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Bulletin: the parking lot will be repainted next week. This is an informational update only.",
+      "received_at": "2025-09-08T11:03:00+00:00",
+      "expected": {
+        "category": "general_information",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": true,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_071",
+      "group": "urgent",
+      "subject": "URGENT: contract signature needed immediately",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "URGENT: we need your signature on the contract immediately. Without it the deal cannot proceed today.",
+      "received_at": "2025-09-11T16:10:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "sales_inquiry",
+          "other"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_072",
+      "group": "urgent",
+      "subject": "URGENT: response required within 24 hours",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "URGENT: please send your response within 24 hours so we can close the case file. This request is time sensitive.",
+      "received_at": "2025-09-14T12:17:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "high",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "other"
+        ],
+        "deadline_text": "within 24 hours",
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_073",
+      "group": "urgent",
+      "subject": "Critical security alert for all administrators",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Critical security alert: all administrators must review their access logs. This message requires immediate attention.",
+      "received_at": "2025-09-17T08:24:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "support_request"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_074",
+      "group": "urgent",
+      "subject": "ASAP: approval needed for the wire transfer",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "ASAP: the client approval for the wire transfer has not arrived. Please respond as soon as possible.",
+      "received_at": "2025-09-20T13:31:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "invoice_payment"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_075",
+      "group": "urgent",
+      "subject": "Emergency: water leak in the office",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Emergency: there is a water leak near the server room. Please respond immediately so facilities can act.",
+      "received_at": "2025-09-03T09:38:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "other"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_076",
+      "group": "urgent",
+      "subject": "URGENT: delivery must leave today",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "URGENT: order ORD-73525 must leave the warehouse today. Please confirm pickup right away.",
+      "received_at": "2025-09-06T14:45:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "sales_inquiry"
+        ],
+        "order_number": "ORD-73525",
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_077",
+      "group": "urgent",
+      "subject": "Final notice: overdue account must be settled",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Final notice: your account is overdue and this is urgent. Please settle the amount by tomorrow before the service is suspended.",
+      "received_at": "2025-09-09T10:52:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "high",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "invoice_payment",
+          "urgent"
+        ],
+        "deadline_text": "by tomorrow",
+        "due_date": "2025-09-10",
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_078",
+      "group": "urgent",
+      "subject": "Please respond immediately to this urgent query",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "This is an urgent query from our operations desk. Please respond immediately with the confirmation number.",
+      "received_at": "2025-09-12T15:59:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "other"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_079",
+      "group": "urgent",
+      "subject": "URGENT: the client meeting starts in one hour",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "URGENT: the client meeting starts in one hour and the agenda has not been shared. Please send it as soon as possible.",
+      "received_at": "2025-09-15T11:06:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "high",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "meeting_request",
+          "urgent"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_080",
+      "group": "urgent",
+      "subject": "Right away: we need your confirmation",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Right away: we need your confirmation on the revised schedule. Production is waiting for your answer.",
+      "received_at": "2025-09-18T16:13:00+00:00",
+      "expected": {
+        "category": "urgent",
+        "priority": "critical",
+        "sentiment": "urgent",
+        "category_any_of": [
+          "urgent",
+          "other"
+        ],
+        "deadline_text": null,
+        "due_date": null,
+        "reply_required": true,
+        "action_required": true,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_081",
+      "group": "spam",
+      "subject": "Congratulations, you are our lucky winner",
+      "sender": "Anna Reyes <anna.reyes@blueharbor-logistics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Congratulations you have won the international lottery draw. Click here now to claim your prize today.",
+      "received_at": "2025-09-01T12:20:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_082",
+      "group": "spam",
+      "subject": "Exclusive crypto profit opportunity",
+      "sender": "Daniel Okafor <daniel.okafor@northwind-retail.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Exclusive crypto profit opportunity: double your money in thirty days. Act now and click here now for free access.",
+      "received_at": "2025-09-04T08:27:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_083",
+      "group": "spam",
+      "subject": "Limited time offer - 80 percent off",
+      "sender": "Priya Raman <priya.raman@cedaranalytics.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Limited time offer: 80 percent off every item in the store. Unsubscribe if you do not want to see this again.",
+      "received_at": "2025-09-07T13:34:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_084",
+      "group": "spam",
+      "subject": "You have been selected for a prize draw",
+      "sender": "Marcus Feld <marcus.feld@helio-mfg.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "You have been selected for a prize draw worth five thousand dollars. Reply with your details to receive your gift.",
+      "received_at": "2025-09-10T09:41:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_085",
+      "group": "spam",
+      "subject": "Double your money with this guaranteed scheme",
+      "sender": "Sofia Marchetti <sofia.marchetti@verde-hospitality.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Double your money with this guaranteed investment scheme. Limited slots are available for early participants.",
+      "received_at": "2025-09-13T14:48:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_086",
+      "group": "spam",
+      "subject": "Flash sale: everything must go",
+      "sender": "Tomas Novak <tomas.novak@arcline-studios.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Flash sale: everything must go, prices slashed for today only. You can unsubscribe at any time using the link below.",
+      "received_at": "2025-09-16T10:55:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_087",
+      "group": "spam",
+      "subject": "Work from home and earn daily",
+      "sender": "Grace Whitfield <grace.whitfield@meridian-health.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Work from home and earn daily with no experience required. Click here now to start this 100 percent free programme.",
+      "received_at": "2025-09-19T15:02:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_088",
+      "group": "spam",
+      "subject": "Congratulations you are the selected winner",
+      "sender": "Kenji Watanabe <kenji.watanabe@sakura-components.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Congratulations you are the selected winner of our customer appreciation draw. Claim the prize now or the offer will be withdrawn.",
+      "received_at": "2025-09-02T11:09:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_089",
+      "group": "spam",
+      "subject": "Exclusive deal for a limited time",
+      "sender": "Leyla Demir <leyla.demir@anatolia-textiles.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Exclusive deal for a limited time: an unbeatable bundle with free gifts. Unsubscribe from future offers in one click.",
+      "received_at": "2025-09-05T16:16:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    },
+    {
+      "id": "synthetic_090",
+      "group": "spam",
+      "subject": "100 percent free trial - no obligations",
+      "sender": "Owen Gallagher <owen.gallagher@fitzgerald-sons.example>",
+      "recipients": [
+        "Alex Morgan <alex.morgan@ourcorp.example>"
+      ],
+      "body": "Claim your 100 percent free trial today. Click here now to activate while the window is open. This is a one time promotional offer.",
+      "received_at": "2025-09-08T12:23:00+00:00",
+      "expected": {
+        "category": "spam",
+        "priority": "low",
+        "sentiment": "neutral",
+        "reply_required": false,
+        "action_required": false,
+        "deadline_text": null,
+        "due_date": null,
+        "invoice_number": null,
+        "order_number": null,
+        "must_be_absent": [
+          "phone_number",
+          "invoice_number",
+          "order_number"
+        ]
+      }
+    }
+  ]
+}
