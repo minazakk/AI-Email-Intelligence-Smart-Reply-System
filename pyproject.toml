@@ -1,0 +1,27 @@
+[project]
+name = "ai-email-intelligence-backend"
+version = "0.1.0"
+description = "Backend, database, auth and API for the AI Email Intelligence & Smart Reply System."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+  "postgres: test requires a reachable PostgreSQL server",
+]
+filterwarnings = [
+  "ignore::DeprecationWarning:passlib.*",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["alembic/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "C4", "SIM"]
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
