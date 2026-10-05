@@ -1,8 +1,8 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/useAuth';
 import { 
   LayoutDashboard, 
@@ -17,7 +17,9 @@ import {
   Inbox,
   Archive,
   Star,
-  Trash2
+  Trash2,
+  Send,
+  Upload
 } from 'lucide-react';
 
 const navigation = [
@@ -32,15 +34,35 @@ const navigation = [
   { name: 'Settings', href: '/dashboard/settings', icon: Settings },
 ];
 
+const actionLinks = [
+  { name: 'Compose', href: '/dashboard/emails/compose', icon: Send },
+  { name: 'Import', href: '/dashboard/emails/import', icon: Upload },
+];
+
 export function DashboardLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const { user, logout } = useAuth();
+  const router = useRouter();
+  const { user, logout, isLoading, isAuthenticated } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (!isLoading && !isAuthenticated) {
+      router.replace('/login');
+    }
+  }, [isLoading, isAuthenticated, router]);
+
+  if (isLoading || !isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="animate-spin w-8 h-8 border-4 border-primary-200 border-t-primary-600 rounded-full"></div>
+      </div>
+    );
+  }
+
   const handleLogout = async () => {
     await logout();
-    window.location.href = '/login';
+    router.replace('/login');
   };
 
   return (
@@ -96,6 +118,28 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
                   href={item.href}
                   className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                     isActive || hasQueryMatch
+                      ? 'bg-primary-50 text-primary-700'
+                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  } ${!sidebarOpen && 'justify-center'}`}
+                  title={sidebarOpen ? undefined : item.name}
+                >
+                  <item.icon className="w-5 h-5 flex-shrink-0" aria-hidden="true" />
+                  {sidebarOpen && <span>{item.name}</span>}
+                </Link>
+              );
+            })}
+            
+            <div className="pt-4 pb-2">
+              {sidebarOpen && <p className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider">Actions</p>}
+            </div>
+            {actionLinks.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                    isActive
                       ? 'bg-primary-50 text-primary-700'
                       : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                   } ${!sidebarOpen && 'justify-center'}`}
