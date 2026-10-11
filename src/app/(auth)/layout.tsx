@@ -20,3 +20,5 @@ export function AuthLayout({ children }: { children: ReactNode }) {
     </div>
   );
 }
+
+export default AuthLayout;
